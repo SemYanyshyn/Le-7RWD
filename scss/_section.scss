@@ -1,0 +1,77 @@
+.section {
+  display: flex;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+section .container {
+  display: flex;
+  padding-left: 12%;
+}
+
+.left-block1 {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 86, 7);
+  width: 20%;
+  gap: 20px;
+  height: 700px;
+  padding-left: 15px;
+  padding-top: 15px;
+}
+
+section .container .left-block1 .row {
+  display: flex;
+  background-color: rgb(232, 73, 0);
+  width: 88%;
+  height: 40px;
+}
+
+.right-block1 {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 700px;
+}
+
+.top {
+  display: flex;
+  width: 100%;
+  height: 236px;
+}
+
+.photo {
+  display: flex;
+  width: 100%; //   дозволяє зайняти всю ширину для .top */
+  gap: 100px; // простір між .photo та .rows-near-photo
+}
+
+.photo img {
+  display: flex;
+  margin-top: 15px;
+  height: 216px;
+  width: 33%;
+  margin-left: 20px;
+}
+
+.rows-near-photo {
+  display: flex;
+  flex-direction: column;
+  height: 236px;
+  width: 40%;
+  // border: 2px solid rgb(155, 9, 9);
+  gap: 18px;
+  box-sizing: border-box; // зрівнює у висоті з .top
+  padding-top: 14px;
+}
+
+section .container .rows-near-photo .row {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(206, 206, 206);
+  width: 100%;
+  height: 20px;
+}
