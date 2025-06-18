@@ -37,18 +37,10 @@ header {
     margin-top: 15px;
   }
 }
-.section {
-  display: flex;
-}
-
-.container {
-  display: flex;
-  align-items: stretch;
-}
-
 section .container {
   display: flex;
   padding-left: 12%;
+  box-sizing: border-box;
 }
 
 .left-block1 {
@@ -57,8 +49,8 @@ section .container {
   background-color: rgb(255, 86, 7);
   width: 20%;
   gap: 20px;
-  padding-left: 15px;
-  padding-top: 15px;
+  padding: 15px 0 0 15px;
+  box-sizing: border-box;
 }
 
 section .container .left-block1 .row {
@@ -72,8 +64,10 @@ section .container .left-block1 .row {
   display: flex;
   flex-direction: column;
   width: 80%;
-  padding-left: 20px;
   padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 14%;
+  box-sizing: border-box;
 }
 
 .top {
@@ -85,25 +79,24 @@ section .container .left-block1 .row {
 .photo {
   display: flex;
   width: 100%;
-  gap: 100px;
+  gap: 40px;
 }
 
 .photo img {
-  display: flex;
-  margin-top: 15px;
+  flex: 1;
   height: 216px;
-  width: 33%;
-  margin-left: 20px;
+  margin-top: 15px;
+  box-sizing: border-box;
 }
 
 .rows-near-photo {
+  flex: 4;
   display: flex;
   flex-direction: column;
-  height: 236px;
-  width: 40%;
   gap: 18px;
-  box-sizing: border-box;
+  height: 236px;
   padding-top: 14px;
+  box-sizing: border-box;
 }
 
 section .container .rows-near-photo .row {
@@ -114,13 +107,11 @@ section .container .rows-near-photo .row {
 
 .bottom {
   display: flex;
-  box-sizing: border-box;
-  width: 100%;
   flex-direction: column;
+  width: 100%;
   gap: 18px;
-  padding-top: 14px;
-  padding-left: 20px;
-  padding-bottom: 15px;
+  padding: 14px 0 15px 0;
+  box-sizing: border-box;
 }
 
 section .container .bottom .row {
