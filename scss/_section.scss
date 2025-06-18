@@ -94,6 +94,7 @@ section .container .bottom .row {
     width: 20%;
     gap: 20px;
     padding: 15px 0 0 15px;
+    padding-right: 10px;
   }
 
   .right-block1 {
@@ -101,10 +102,33 @@ section .container .bottom .row {
   }
 
   .photo {
-    gap: 40px; /* Зменшуємо відступи */
+    gap: 40px;
   }
 
   .photo img {
-    width: 30%; /* Зменшуємо ширину фото */
+    width: 30%; //фото займає чітко 30% ширини батьківського блоку(.photo) і плавно зменшується
+  }
+}
+
+@media (max-width: 375px) {
+  section .container {
+    flex-direction: column;
+    padding-left: 0px;
+  }
+
+  .left-block1 {
+    width: 100%;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    gap: 10px;
+    flex-direction: row;
+  }
+
+  section .container .left-block1 .row {
+    display: none; // приховуємо всі рядки в лівому блоці
+  }
+
+  section .container .left-block1 .row:nth-child(-n + 3) {
+    display: flex; // показуємо перші три рядки
   }
 }
