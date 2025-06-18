@@ -19,6 +19,22 @@ header {
   background-color: rgb(54, 195, 255);
 }
 
+@media (max-width: 1285.6px) {
+  header {
+    justify-content: space-between;
+  }
+  .left-block,
+  .right-block {
+    width: 25%;
+    height: 65px;
+  }
+  .right-block {
+    margin-right: 30px;
+  }
+  .left-block {
+    margin-left: 30px;
+  }
+}
 @media (max-width: 375px) {
   header {
     flex-direction: column;
@@ -120,6 +136,19 @@ section .container .bottom .row {
   height: 25px;
 }
 
+@media (max-width: 1240px) {
+  section .container {
+    display: flex;
+    padding-left: 12%;
+  }
+  .left-block1 {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    gap: 20px;
+    padding: 15px 0 0 15px;
+  }
+}
 body {
   margin: 0;
   padding: 0;
