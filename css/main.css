@@ -259,6 +259,30 @@ footer .footer-container .footer-block .row {
     width: 15%;
   }
 }
+@media (max-width: 375px) {
+  footer {
+    height: 250px;
+  }
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .footer-block {
+    width: 90%;
+    height: 40px;
+    gap: 3px;
+    align-items: flex-start;
+    padding-left: 10px;
+  }
+  footer .footer-container .footer-block .row {
+    display: none;
+  }
+  footer .footer-container .footer-block .row:nth-child(-n+1) {
+    display: flex;
+    width: 50%;
+  }
+}
 body {
   margin: 0;
   padding: 0;
