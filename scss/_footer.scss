@@ -28,3 +28,9 @@ footer .footer-container .footer-block .row {
   height: 20px;
   background-color: rgb(3, 128, 66);
 }
+
+@media (max-width: 1285.6px) {
+  .footer-block {
+    width: 15%;
+  }
+}
