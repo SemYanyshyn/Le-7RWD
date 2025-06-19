@@ -1,7 +1,7 @@
 section .container {
   display: flex;
   padding-left: 12%;
-  box-sizing: border-box; // This is the main container for the section
+  box-sizing: border-box;
 }
 
 .left-block1 {
@@ -130,5 +130,59 @@ section .container .bottom .row {
 
   section .container .left-block1 .row:nth-child(-n + 3) {
     display: flex; // показуємо перші три рядки
+  }
+
+  .right-block1 {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0px;
+  }
+
+  .top {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+  }
+
+  .photo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0px;
+    box-sizing: border-box;
+  }
+
+  .photo img {
+    display: flex;
+    width: 100%;
+    margin: 0px;
+  }
+
+  .rows-near-photo {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+  }
+
+  section .container .rows-near-photo .row {
+    height: 20px;
+    width: 80%;
+  }
+
+  .bottom {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+    padding: 14px 0 15px 0;
+  }
+
+  section .container .bottom .row {
+    width: 80%;
+    height: 20px;
   }
 }
