@@ -224,6 +224,36 @@ section .container .bottom .row {
     height: 20px;
   }
 }
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  height: 250px;
+  gap: 30px;
+  background-color: rgb(0, 209, 105);
+}
+
+.footer-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 10%;
+  height: 70%;
+  gap: 20px;
+  background-color: rgb(2, 177, 90);
+}
+
+footer .footer-container .footer-block .row {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 20px;
+  background-color: rgb(3, 128, 66);
+}
+
 body {
   margin: 0;
   padding: 0;
